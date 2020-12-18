@@ -1,0 +1,127 @@
+html, body {
+    background-color: #4F2683
+}
+
+body {
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+header {
+    background-color: #FFC62F;
+    border-bottom: 2px solid black;
+    color: #4F2683;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 3rem;
+    max-width: 800px;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#coins {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.coin {
+    border: 0.1rem solid black;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.quarter, .dime, .nickel {
+    background: #A9A9A9;
+}
+
+.nickel {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.dime {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.penny {
+    background: #b87333;
+    height: 1.9rem;
+    width: 1.9rem;
+}
+
+#coin-counts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#coin-counts > div {
+    text-align: center;
+    border: 0.2rem solid #FFC62F;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #FFC62F;
+    width: 50px
+}
+
+#coin-counts > div:before {
+    content: "x";
+}
+
+#purchase-confirmation {
+    font-size: 1.5rem;
+    text-align: left;
+    border: 0.1rem solid black;
+    background-color: #FFC62F;
+    margin: 2rem 15px;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    #purchase-confirmation {
+        margin: 2rem 50px;
+    }
+}
+
+#case-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#case-switcher > button {
+    border: .1rem solid black;
+    padding: 1rem 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: #FFC62F;
+    border-radius: .5rem;
+    cursor: pointer;
+    min-width: 110px;
+}
+
+#case-switcher button:first-of-type {
+    margin-right: 2rem;
+}

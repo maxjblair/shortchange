@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <h1>Short Change</h1>
+            </header>
+        </section>
+        <section class="main">
+            <div id="coins">
+                <div class="coin quarter">.25</div>
+                <div class="coin dime">.10</div>
+                <div class="coin nickel">.05</div>
+                <div class="coin penny">.01</div>
+            </div>
+        
+            <div id="coin-counts">
+                <div id="quarter-count"></div>
+                <div id="dime-count"></div>
+                <div id="nickel-count"></div>
+                <div id="penny-count"></div>
+            </div>
+        
+            <div id="purchase-confirmation"></div>
+        
+            <div id="case-switcher">
+                <button id="previous-case">Previous</button>
+                <button id="next-case">Next</button>
+            </div>
+        </section>
+        <script type="module" src="index.js"></script>
+    </body>
+</html> 
